@@ -2,11 +2,11 @@ const path = require('path');
 const glob = require('glob');
 const fs = require('fs');
 
-const OVERRIDE_FOLDER_PATH = './override'
+const OVERRIDE_FOLDER_PATH = './src/override';
 
 module.exports = class PWAStudioOverridePlugin {
     constructor(overrideRootPath = OVERRIDE_FOLDER_PATH) {
-        this.name = 'PWAStudioOverridePlugin';
+        this.name = 'OverrideMappingPlugin';
         this.moduleOverrideMap = this.getFilePaths(overrideRootPath);
     }
 

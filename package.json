@@ -1,8 +1,13 @@
 {
-  "name": "override-mapping-webpack-plugin",
+  "name": "@lucascalazans/override-mapping-webpack-plugin",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:lucascalazans/override-mapping-webpack-plugin.git",
   "author": "Lucas Calazans <calazans95@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "pwa-studio": {
+    "targets": {
+      "intercept": "./intercept.js"
+    }
+  }
 }
